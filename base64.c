@@ -25,11 +25,6 @@
 #include <stdlib.h>
 #include "base64.h"
 
-static inline bool is_base64 ( unsigned char c )
-{
-    return ( isalnum ( c ) || ( c == '+' ) || ( c == '/' ) );
-}
-
 static const char lookup_table[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 static const char pad = '=';
 
